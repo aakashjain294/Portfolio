@@ -27,7 +27,7 @@ function Footer() {
                         <EmailIcon style={{ fontSize: 35 }} />
                     </Link>
                 </div>
-                <div class="mui-container mui--text-center" >
+                <div className="mui-container mui--text-center" >
                    <span >Made with ♥ by Aakash Jain</span> 
                 </div>
             </footer>

@@ -10,7 +10,7 @@ function Content() {
         <div className="content">
             <div className='content-detail'>
                 <div className='detail'>
-                    <h1 >Hello, I'M <span style={{ color: "#182C61", fontWeight: "bolder" }}>Aakash Jain</span></h1>
+                    <h1 >Hello, I&apos;M <span style={{ color: "#182C61", fontWeight: "bolder" }}>Aakash Jain</span></h1>
                     <h2>
                         <Typical
                             loop={Infinity}
