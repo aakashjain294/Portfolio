@@ -10,8 +10,17 @@ function Content() {
         <div className="content">
             <div className='content-detail'>
                 <div className='detail'>
-                    <h1 >Hello, I&apos;M <span style={{ color: "#182C61", fontWeight: "bolder" }}>Aakash Jain</span></h1>
-                    <h2>
+                    <span 
+                        style={{display:"flex", 
+                        justifyContent:"space-evenly", 
+                        alignItems:"center", 
+                        color: "#182C61", 
+                        fontWeight: "bolder" }}>
+                    <h1 >Hello, I&apos;M 
+                        Aakash Jain
+                        </h1>
+                    </span>
+                    <span className='typical'>
                         <Typical
                             loop={Infinity}
                             wrapper="b"
@@ -19,14 +28,12 @@ function Content() {
                             steps={[
                                 'Frontend Developer 🔥', 1000, "Enthusiast Coder 🤠", 1000, " Designer✌"]}
                         />
-                    </h2>
-                    <p style={{fontSize:"large", fontStyle:"italic", color:"darkslategrey"}}>Knack of building applications with front end operations.</p>
+                    </span>
                 </div>
-                <div className='detail-button-container'>
+                <span style={{display:"flex", justifyContent:"space-evenly", marginTop:"1rem"}}>
                     <Button className='hire-me-btn' style={{marginLeft: "-1.5rem"}} variant="contained">Hire me</Button>
                     <Button className='resume-btn' style={{marginLeft: "0.5rem"}} variant="contained">Get Resume</Button>
-
-                </div>
+                </span>
             </div>
             <div className='content-image'>
                 <div className="profile-container">

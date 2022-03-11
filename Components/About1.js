@@ -1,412 +1,738 @@
-import { Button, Link } from '@mui/material'
-import { Box } from '@mui/system'
-import React from 'react'
-import reactIcon from '../assets/reactIcon.png'
-import HTML from '../assets/HTML.png'
-import CSS from '../assets/CSS.png'
-import JAVA from '../assets/JAVA.png'
-import MUI from '../assets/MUI.png'
-import leetcode from '../assets/leetcode.png'
-import gfg from '../assets/gfg.png'
-import insta from '../assets/Insta1.PNG'
-import camera from '../assets/camera.PNG'
-import movies from '../assets/Movies.PNG'
-import jira from '../assets/jira.PNG'
-import excel from '../assets/excel.PNG'
-import portf from '../assets/portf.PNG'
-import hackerrrank from '../assets/hackerrrank.png'
-import firebase from '../assets/firebase.png'
-import bootstrap from '../assets/bootstrap.png'
-import JavascriptIcon from '@mui/icons-material/Javascript';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
-import SlideshowIcon from '@mui/icons-material/Slideshow';
-import next from '../public/favicon.ico'
-import Navbar from './Navbar'
-import Image from 'next/image'
-import Footer from './Footer'
+import { Button, Link } from "@mui/material";
+import { Box } from "@mui/system";
+import React from "react";
+import reactIcon from "../assets/reactIcon.png";
+import HTML from "../assets/HTML.png";
+import CSS from "../assets/CSS.png";
+import JAVA from "../assets/JAVA.png";
+import MUI from "../assets/MUI.png";
+import leetcode from "../assets/leetcode.png";
+import gfg from "../assets/gfg.png";
+import insta from "../assets/Insta1.PNG";
+import news from "../assets/Newsapp.png";
+import camera from "../assets/camera.PNG";
+import movies from "../assets/Movies.PNG";
+import jira from "../assets/jira.PNG";
+import excel from "../assets/excel.PNG";
+import portf from "../assets/portf.PNG";
+import hackerrrank from "../assets/hackerrrank.png";
+import firebase from "../assets/firebase.png";
+import bootstrap from "../assets/bootstrap.png";
+import JavascriptIcon from "@mui/icons-material/Javascript";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneIcon from "@mui/icons-material/Phone";
+import SlideshowIcon from "@mui/icons-material/Slideshow";
+import next from "../public/favicon.ico";
+import Image from "next/image";
+import Footer from "./Footer";
+import { withTheme } from "@emotion/react";
 function About() {
-    return (
-        <div>
-            <Navbar />
-            <div className='main'>
-                <div className='about-project-both'>
-                    <div className='skills-profile'>
-                        <div className='skills-section'>
-                            <h2 style={{ textAlign: "center" }}><u>SKILLS</u></h2>
-                            <div className='skills-btn' style={{ display: "flex", justifyContent: "space-evenly", flexWrap: "wrap" }}>
-                                <Button  style={{ marginLeft: "0.2rem", marginBottom: "0.1rem", backgroundColor: "black", color: "white" }} variant="outlined">
-                                    React js
-                                    <Image height={25} width={40} src={reactIcon} />
-                                </Button>
-                                <Button style={{ marginLeft: "0.2rem", marginBottom: "0.1rem", backgroundColor: "black", color: "white" }} variant="outlined" >
-                                    Html
-                                    <Image height={25} width={40} src={HTML} />
-                                </Button>
-                                <Button style={{ marginLeft: "0.2rem", marginBottom: "0.1rem", backgroundColor: "black", color: "white" }} variant="outlined" endIcon={<JavascriptIcon style={{ fontSize: 30 }} />}>
-                                    javascript
-                                </Button>
-                                <Button style={{ marginLeft: "0.2rem", marginBottom: "0.1rem", backgroundColor: "black", color: "white" }} variant="outlined">
-                                    css
-                                    <Image height={25} width={40} src={CSS} />
-                                </Button>
-                                <Button style={{ marginLeft: "0.2rem", marginBottom: "0.1rem", backgroundColor: "black", color: "white" }} variant="outlined" >
-                                    Material ui
-                                    <Image height={25} width={30} src={MUI} />
-                                </Button>
-                                <Button style={{ marginLeft: "0.2rem", marginBottom: "0.1rem", backgroundColor: "black", color: "white" }} variant="outlined">
-                                    java
-                                    <Image height={25} width={40} src={JAVA} />
-                                </Button>
-                                <Button style={{ marginLeft: "0.2rem", marginBottom: "0.1rem", backgroundColor: "black", color: "white" }} variant="outlined">
-                                    next js
-                                    <Image height={25} width={30} src={next} />
-                                </Button>
-                                <Button style={{ marginLeft: "0.2rem", marginBottom: "0.1rem", backgroundColor: "black", color: "white" }} variant="outlined" endIcon={<GitHubIcon />}>
-                                    git/github
-                                </Button>
-                                <Button style={{ marginLeft: "0.2rem", marginBottom: "0.1rem", backgroundColor: "black", color: "white" }} variant="outlined">
-                                    bootstrap
-                                    <Image height={25} width={30} src={bootstrap} />
-                                </Button>
-                                <Button style={{ marginLeft: "0.2rem", marginBottom: "0.1rem", backgroundColor: "black", color: "white" }} variant="outlined">
-                                    firebase
-                                    <Image height={25} width={30} src={firebase} />
-                                </Button>
-                                <Button style={{ marginLeft: "0.2rem", marginBottom: "0.1rem", backgroundColor: "black", color: "white" }} variant="outlined">
-                                    alogithms
-                                </Button>
-                                <Button style={{ marginLeft: "0.2rem", marginBottom: "0.1rem", backgroundColor: "black", color: "white" }} variant="outlined">
-                                    data structures
-                                </Button>
-
-                            </div>
-                        </div>
-                        <div className='profile-section'>
-                            <h2 style={{ textAlign: "center" }}><u>PROFILES</u></h2>
-                            <div className='profile-btn-section'>
-                                <Link href="#" target="_blank">
-                                    <GitHubIcon style={{ fontSize: 35 }} />
-                                </Link>
-                                <Link href="#" target="_blank">
-                                    <LinkedInIcon style={{ fontSize: 35 }} />
-                                </Link>
-                                <Link href="#" target="_blank">
-                                    <Image height={40} width={40} src={leetcode} />
-                                </Link>
-                                <Link href="#" target="_blank">
-                                    <Image height={40} width={40} src={gfg} />
-                                </Link>
-                                <Link href="#" target="_blank">
-                                    <Image height={40} width={40} src={hackerrrank} />
-                                </Link>
-                            </div>
-                            <div className='profile-contact'>
-
-                                <div style={{display:"flex",justifyContent:"center",alignItems:"center", fontFamily:"arial",marginTop:"1rem" }}>
-                                    <PhoneIcon style={{ fontSize: 35, marginLeft: "0.5rem"}} /><span style={{fontSize:"1.1rem"}}>:- +91 9625783388</span> 
-                                </div >
-                                <div style={{display:"flex",justifyContent:"center",alignItems:"center", fontFamily:"arial",marginTop:"1rem" }}>
-                                    <EmailIcon style={{ fontSize: 30, marginLeft: "0.5rem" }} /><span style={{fontSize:"1rem"}}>:- itsaakashjain119@gmail.com</span> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='about-project'>
-                        <div className='about-section'>
-                            <h1 style={{ fontStyle: "italic", paddingLeft: "1rem" }}><u>About</u></h1>
-                            <p style={{ marginTop:"-0.6rem",paddingLeft: "0.5rem" }}>I am currently pursuing B.Tech Degree(Final Year) in Computer Science Engineering from Academy of Technology. I have 3+ years of experience in Web Development and I have a Youtube Channel where I teach Full Stack Web Development Projects</p>
-                            <Button className='resume-btn' style={{ marginLeft: "0.5rem" }} variant="outlined">Resume</Button>
-                        </div>
-                        <div className='project-section'>
-
-                            <h1
-                                style={{
-                                    fontStyle: "italic",
-                                    paddingLeft: "1rem"
-                                }}>
-                                <u>Projects</u>
-                            </h1>
-                            <div className='project-box'>
-                                <Box
-                                    sx={{
-                                        width: 220,
-                                        height: 150,
-                                        // backgroundColor: 'red',
-                                        // '&:hover': {
-                                        //     backgroundColor: 'primary.main',
-                                        //     opacity: [0.9, 0.8, 0.7],
-                                        // },
-                                        borderRadius: '15px',
-                                        marginBottom: '0.5rem'
-                                    }}
-                                >
-                                    <Image src={insta} />
-                                    <Box
-                                        sx={{
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "space-evenly",
-                                            backgroundColor:"black",
-                                            borderRadius:"15px"
-                                        }}
-                                    >
-                                        <Button style={{ backgroundColor: "black", color: "white" }} variant="outlined">
-                                            Reels clone
-                                        </Button>
-                                        <Link href="#" target="_blank">
-                                            <GitHubIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                        <Link href="#" target="_blank">
-                                            <SlideshowIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                    </Box>
-                                </Box>
-
-                                <Box
-                                    sx={{
-                                        width: 220,
-                                        height: 150,
-                                        // backgroundColor: 'red',
-                                        // '&:hover': {
-                                        //     backgroundColor: 'primary.main',
-                                        //     opacity: [0.9, 0.8, 0.7],
-                                        // },
-                                        borderRadius: '15px',
-                                        marginBottom: '0.5rem'
-                                    }}
-                                >
-                                    <Image  src={movies} />
-                                    <Box
-                                        sx={{
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "space-evenly"
-                                        }}
-                                    >
-                                        <Button style={{ backgroundColor: "black", color: "white" }} variant="outlined">
-                                            Movies App
-                                        </Button>
-                                        <Link href="#" target="_blank">
-                                            <GitHubIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                        <Link href="#" target="_blank">
-                                            <SlideshowIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                    </Box>
-                                </Box>
-
-                                <Box
-                                    sx={{
-                                        width: 220,
-                                        height: 150,
-                                        // backgroundColor: 'red',
-                                        // '&:hover': {
-                                        //     backgroundColor: 'primary.main',
-                                        //     opacity: [0.9, 0.8, 0.7],
-                                        // },
-                                        borderRadius: '15px',
-                                        marginBottom: '0.5rem'
-                                    }}
-                                >
-                                    <Image height={650} src={portf} />
-                                    <Box
-                                        sx={{
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "space-evenly"
-                                        }}
-                                    >
-                                        <Button style={{ backgroundColor: "black", color: "white" }} variant="outlined">
-                                            protfolio
-                                        </Button>
-                                        <Link href="#" target="_blank">
-                                            <GitHubIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                        <Link href="#" target="_blank">
-                                            <SlideshowIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                    </Box>
-                                </Box>
-
-                                <Box
-                                    sx={{
-                                        width: 220,
-                                        height: 150,
-                                        // backgroundColor: 'red',
-                                        // '&:hover': {
-                                        //     backgroundColor: 'primary.main',
-                                        //     opacity: [0.9, 0.8, 0.7],
-                                        // },
-                                        borderRadius: '15px',
-                                        marginBottom: '0.5rem'
-                                    }}
-                                >
-                                    <Image height={650} src={camera} />
-                                    <Box
-                                        sx={{
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "space-evenly"
-                                        }}
-                                    >
-                                        <Button style={{ backgroundColor: "black", color: "white" }} variant="outlined">
-                                            Camera App
-                                        </Button>
-                                        <Link href="#" target="_blank">
-                                            <GitHubIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                        <Link href="#" target="_blank">
-                                            <SlideshowIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                    </Box>
-                                </Box>
-
-                                <Box
-                                    sx={{
-                                        width: 220,
-                                        height: 150,
-                                        // backgroundColor: 'red',
-                                        // '&:hover': {
-                                        //     backgroundColor: 'primary.main',
-                                        //     opacity: [0.9, 0.8, 0.7],
-                                        // },
-                                        borderRadius: '15px',
-                                        marginBottom: '0.5rem'
-                                    }}
-                                >
-                                    <Image height={650} src={jira} />
-                                    <Box
-                                        sx={{
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "space-evenly"
-                                        }}
-                                    >
-                                        <Button style={{ backgroundColor: "black", color: "white" }} variant="outlined">
-                                            Jira clone
-                                        </Button>
-                                        <Link href="#" target="_blank">
-                                            <GitHubIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                        <Link href="#" target="_blank">
-                                            <SlideshowIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                    </Box>
-                                </Box>
-
-                                <Box
-                                    sx={{
-                                        width: 220,
-                                        height: 150,
-                                        // backgroundColor: 'red',
-                                        // '&:hover': {
-                                        //     backgroundColor: 'primary.main',
-                                        //     opacity: [0.9, 0.8, 0.7],
-                                        // },
-                                        borderRadius: '15px',
-                                        marginBottom: '0.5rem'
-                                    }}
-                                >
-                                    <Image src={excel} />
-                                    <Box
-                                        sx={{
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "space-evenly"
-                                        }}
-                                    >
-                                        <Button style={{ backgroundColor: "black", color: "white" }} variant="outlined">
-                                            excel clone
-                                        </Button>
-                                        <Link href="#" target="_blank">
-                                            <GitHubIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                        <Link href="#" target="_blank">
-                                            <SlideshowIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                    </Box>
-                                </Box>
-
-                                {/* <Box
-                                    sx={{
-                                        width: 220,
-                                        height: 150,
-                                        // backgroundColor: 'red',
-                                        // '&:hover': {
-                                        //     backgroundColor: 'primary.main',
-                                        //     opacity: [0.9, 0.8, 0.7],
-                                        // },
-                                        borderRadius: '15px',
-                                        marginBottom: '0.5rem'
-                                    }}
-                                >
-                                    <Image src={insta} />
-                                    <Box 
-                                        sx={{
-                                            display:"flex",
-                                            flexWrap:"wrap",
-                                            alignItems:"center", 
-                                            justifyContent:"space-evenly"
-                                        }}
-                                    >
-                                        <Button style={{ backgroundColor: "black", color: "white" }} variant="outlined">
-                                            Reels clone
-                                        </Button>
-                                        <Link href="#" target="_blank">
-                                            <GitHubIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                        <Link href="#" target="_blank">
-                                            <SlideshowIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                    </Box>
-                                </Box>
-
-                                <Box
-                                    sx={{
-                                        width: 220,
-                                        height: 150,
-                                        // backgroundColor: 'red',
-                                        // '&:hover': {
-                                        //     backgroundColor: 'primary.main',
-                                        //     opacity: [0.9, 0.8, 0.7],
-                                        // },
-                                        borderRadius: '15px',
-                                        marginBottom: '0.5rem'
-                                    }}
-                                >
-                                    <Image src={insta} />
-                                    <Box 
-                                        sx={{
-                                            display:"flex",
-                                            flexWrap:"wrap",
-                                            alignItems:"center", 
-                                            justifyContent:"space-evenly"
-                                        }}
-                                    >
-                                        <Button style={{ backgroundColor: "black", color: "white" }} variant="outlined">
-                                            Reels clone
-                                        </Button>
-                                        <Link href="#" target="_blank">
-                                            <GitHubIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                        <Link href="#" target="_blank">
-                                            <SlideshowIcon style={{ fontSize: 35 }} />
-                                        </Link>
-                                    </Box>
-                                </Box> */}
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+  return (
+    <div>
+      <div className="main">
+        <div className="about-project-section">
+          <div className="about">
+            <h3>
+              <span
+                style={{
+                  fontSize: "23px",
+                  fontStyle: "italic",
+                  color: "antiquewhite",
+                  margin: "2rem",
+                }}
+              >
+                <u>ABOUT</u>
+              </span>
+            </h3>
+            <div
+            className="about-text"
+            >
+              Hi! This is Aakash Jain. I&apos;m currently pursuing my B.Tech
+              Degree (Pre-Final Year) in Information Technology from GGSIPU.
+              I&apos;m an aspiring Frontend developer who loves to learn and
+              create new things and a result-oriented professional willing to
+              work as a software engineer in a globally reputed company.
             </div>
-            <Footer/>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginTop: "1rem",
+              }}
+            >
+              <Button className="hire-me-btn resume-btn">Resume</Button>
+            </div>
+          </div>
+          <div className="project">
+            <h3>
+              <span
+                style={{
+                  fontSize: "23px",
+                  fontStyle: "italic",
+                  color: "antiquewhite",
+                  margin: "2rem",
+                }}
+              >
+                <u>PROJECTS</u>
+              </span>
+            </h3>
+            <div className="projects-section">
+              <Box
+                sx={{
+                  width: 250,
+                  height: 200,
+                  borderRadius: 3,
+                  margin: "15px",
+                }}
+              >
+                <Image
+                  src={insta}
+                  className="projectImage"
+                  height={160}
+                  width={250}
+                />
+                <Box
+                  sx={{
+                    borderColor: "blue",
+                    height: "2.3rem",
+                    borderRadius: 3,
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <GitHubIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                  <Button
+                    className="hire-me-btn"
+                    variant="outlined"
+                    style={{
+                      minWidth: "170px",
+                    }}
+                  >
+                    Reels clone
+                  </Button>
+
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <SlideshowIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                </Box>
+              </Box>
+
+              <Box
+                sx={{
+                  width: 250,
+                  height: 200,
+                  borderRadius: 3,
+                  margin: "15px",
+                }}
+              >
+                <Image
+                  src={portf}
+                  className="projectImage"
+                  height={160}
+                  width={250}
+                />
+                <Box
+                  sx={{
+                    borderColor: "blue",
+                    height: "2.3rem",
+                    borderRadius: 3,
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <GitHubIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                  <Button
+                    className="hire-me-btn"
+                    variant="outlined"
+                    style={{
+                      minWidth: "170px",
+                    }}
+                  >
+                    PortFolio
+                  </Button>
+
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <SlideshowIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                </Box>
+              </Box>
+
+              <Box
+                sx={{
+                  width: 250,
+                  height: 200,
+                  borderRadius: 3,
+                  margin: "15px",
+                }}
+              >
+                <Image
+                  src={movies}
+                  className="projectImage"
+                  height={160}
+                  width={250}
+                />
+                <Box
+                  sx={{
+                    borderColor: "blue",
+                    height: "2.3rem",
+                    borderRadius: 3,
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <GitHubIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                  <Button
+                    className="hire-me-btn"
+                    variant="outlined"
+                    style={{
+                      minWidth: "170px",
+                    }}
+                  >
+                    Movies App
+                  </Button>
+
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <SlideshowIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                </Box>
+              </Box>
+
+              <Box
+                sx={{
+                  width: 250,
+                  height: 200,
+                  borderRadius: 3,
+                  margin: "15px",
+                }}
+              >
+                <Image
+                  src={camera}
+                  className="projectImage"
+                  height={160}
+                  width={250}
+                />
+                <Box
+                  sx={{
+                    borderColor: "blue",
+                    height: "2.3rem",
+                    borderRadius: 3,
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <GitHubIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                  <Button
+                    className="hire-me-btn"
+                    variant="outlined"
+                    style={{
+                      minWidth: "170px",
+                    }}
+                  >
+                    Camera App
+                  </Button>
+
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <SlideshowIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                </Box>
+              </Box>
+
+              <Box
+                sx={{
+                  width: 250,
+                  height: 200,
+                  borderRadius: 3,
+                  margin: "15px",
+                }}
+              >
+                <Image
+                  src={jira}
+                  className="projectImage"
+                  height={160}
+                  width={250}
+                />
+                <Box
+                  sx={{
+                    borderColor: "blue",
+                    height: "2.3rem",
+                    borderRadius: 3,
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <GitHubIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                  <Button
+                    className="hire-me-btn"
+                    variant="outlined"
+                    style={{
+                      minWidth: "170px",
+                    }}
+                  >
+                    jira clone
+                  </Button>
+
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <SlideshowIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                </Box>
+              </Box>
+
+              {/* <Box
+                sx={{
+                  width: 250,
+                  height: 200,
+                  borderRadius: 3,
+                  margin: "15px",
+                }}
+              >
+                <Image
+                  src={news}
+                  className="projectImage"
+                  height={160}
+                  width={250}
+                />
+                <Box
+                  sx={{
+                    borderColor: "blue",
+                    height: "2.3rem",
+                    borderRadius: 3,
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <GitHubIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                  <Button
+                    className="hire-me-btn"
+                    variant="outlined"
+                    style={{
+                      minWidth: "170px",
+                    }}
+                  >
+                    News App
+                  </Button>
+
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <SlideshowIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                </Box>
+              </Box> */}
+
+              <Box
+                sx={{
+                  width: 250,
+                  height: 200,
+                  borderRadius: 3,
+                  margin: "15px",
+                }}
+              >
+                <Image
+                  src={excel}
+                  className="projectImage"
+                  height={160}
+                  width={250}
+                />
+                <Box
+                  sx={{
+                    borderColor: "blue",
+                    height: "2.3rem",
+                    borderRadius: 3,
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <GitHubIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                  <Button
+                    className="hire-me-btn"
+                    variant="outlined"
+                    style={{
+                      minWidth: "170px",
+                    }}
+                  >
+                    excel clone
+                  </Button>
+
+                  <Button
+                    variant="outlined"
+                    style={{
+                      minWidth: "30px",
+                      border: "none",
+                    }}
+                  >
+                    <Link href="#" target="_blank">
+                      <SlideshowIcon
+                        style={{ fontSize: "2rem", color: "antiquewhite" }}
+                      />
+                    </Link>
+                  </Button>
+                </Box>
+              </Box>
+            </div>
+          </div>
         </div>
-    )
+        <div className="skills-profile-section">
+          <div className="skills-section">
+            <h1 style={{ textAlign: "center" }}>
+              <span
+                style={{
+                  color: "antiquewhite",
+                }}
+              >
+                <u>SKILLS</u>
+              </span>
+            </h1>
+            <div className="skills-btn">
+              <Button
+                style={{
+                  marginLeft: "0.2rem",
+                  marginBottom: "0.1rem",
+                  backgroundColor: "#0d144f",
+                  color: "antiquewhite",
+                }}
+                variant="outlined"
+              >
+                React js
+                <Image height={25} width={35} src={reactIcon} />
+              </Button>
+              <Button
+                style={{
+                  marginLeft: "0.2rem",
+                  marginBottom: "0.1rem",
+                  backgroundColor: "#0d144f",
+                  color: "antiquewhite",
+                }}
+                variant="outlined"
+              >
+                Html
+                <Image height={25} width={30} src={HTML} />
+              </Button>
+              <Button
+                style={{
+                  marginLeft: "0.2rem",
+                  marginBottom: "0.1rem",
+                  backgroundColor: "#0d144f",
+                  color: "antiquewhite",
+                }}
+                variant="outlined"
+                endIcon={<JavascriptIcon style={{ fontSize: 30 }} />}
+              >
+                javascript
+              </Button>
+              <Button
+                style={{
+                  marginLeft: "0.2rem",
+                  marginBottom: "0.1rem",
+                  backgroundColor: "#0d144f",
+                  color: "antiquewhite",
+                }}
+                variant="outlined"
+              >
+                css
+                <Image height={25} width={30} src={CSS} />
+              </Button>
+              <Button
+                style={{
+                  marginLeft: "0.2rem",
+                  marginBottom: "0.1rem",
+                  backgroundColor: "#0d144f",
+                  color: "antiquewhite",
+                }}
+                variant="outlined"
+              >
+                Material ui
+                <Image height={25} width={30} src={MUI} />
+              </Button>
+              <Button
+                style={{
+                  marginLeft: "0.2rem",
+                  marginBottom: "0.1rem",
+                  backgroundColor: "#0d144f",
+                  color: "antiquewhite",
+                }}
+                variant="outlined"
+              >
+                java
+                <Image height={25} width={30} src={JAVA} />
+              </Button>
+              <Button
+                style={{
+                  marginLeft: "0.2rem",
+                  marginBottom: "0.1rem",
+                  backgroundColor: "#0d144f",
+                  color: "antiquewhite",
+                }}
+                variant="outlined"
+              >
+                next js
+                <Image height={25} width={30} src={next} />
+              </Button>
+              <Button
+                style={{
+                  marginLeft: "0.2rem",
+                  marginBottom: "0.1rem",
+                  backgroundColor: "#0d144f",
+                  color: "antiquewhite",
+                }}
+                variant="outlined"
+                endIcon={<GitHubIcon />}
+              >
+                git/github
+              </Button>
+              <Button
+                style={{
+                  marginLeft: "0.2rem",
+                  marginBottom: "0.1rem",
+                  backgroundColor: "#0d144f",
+                  color: "antiquewhite",
+                }}
+                variant="outlined"
+              >
+                bootstrap
+                <Image height={25} width={30} src={bootstrap} />
+              </Button>
+              <Button
+                style={{
+                  marginLeft: "0.2rem",
+                  marginBottom: "0.1rem",
+                  backgroundColor: "#0d144f",
+                  color: "antiquewhite",
+                }}
+                variant="outlined"
+              >
+                firebase
+                <Image height={25} width={30} src={firebase} />
+              </Button>
+              <Button
+                style={{
+                  marginLeft: "0.2rem",
+                  marginBottom: "0.1rem",
+                  backgroundColor: "#0d144f",
+                  color: "antiquewhite",
+                }}
+                variant="outlined"
+              >
+                alogithms
+              </Button>
+              <Button
+                style={{
+                  marginLeft: "0.2rem",
+                  marginBottom: "0.1rem",
+                  backgroundColor: "#0d144f",
+                  color: "antiquewhite",
+                }}
+                variant="outlined"
+              >
+                data structures
+              </Button>
+            </div>
+          </div>
+          <div className="profile-section">
+            <h1 style={{ textAlign: "center" }}>
+              <span
+                style={{
+                  color: "antiquewhite",
+                }}
+              >
+                <u>PROFILES</u>
+              </span>
+            </h1>
+            <div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-evenly",
+                }}
+              >
+                <Link href="#" target="_blank">
+                  <GitHubIcon style={{ fontSize: 35, color:"antiquewhite" }} />
+                </Link>
+                <Link href="#" target="_blank">
+                  <LinkedInIcon style={{ fontSize: 35, color:"antiquewhite" }} />
+                </Link>
+                <Link href="#" target="_blank">
+                  <Image height={40} width={40} src={leetcode}/>
+                </Link>
+                <Link href="#" target="_blank">
+                  <Image height={40} width={40} src={gfg} />
+                </Link>
+                <Link href="#" target="_blank">
+                  <Image height={40} width={40} src={hackerrrank} />
+                </Link>
+              </div>
+              <div style={{ textAlign: "center", color: "antiquewhite" }}>
+                -----------------------------------
+              </div>
+              <div
+                style={{
+                   display:"flex",fontSize:"1.4rem",color:"antiquewhite",marginTop:"0.2rem",marginLeft:"1rem"
+                }}
+              >
+                <PhoneIcon style={{ fontSize: 35, marginLeft: "0.5rem", color:"antiquewhite" }} />
+                <span style={{ fontSize: "1.1rem" }}>:- +91 9625783388</span>
+              </div>
+              <div
+                style={{
+                    display:"flex",fontSize:"1.4rem",color:"antiquewhite",marginTop:"0.2rem",marginLeft:"1rem"
+                }}
+              >
+                <EmailIcon style={{ fontSize: 30, marginLeft: "0.5rem" }} />
+                <span style={{ fontSize: "1rem" }}>
+                    :- officialaakashjain119@gmail.com
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default About
+export default About;

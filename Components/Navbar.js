@@ -46,7 +46,9 @@ const ResponsiveAppBar = () => {
             sx={{ mr: 2, display: { xs: 'flex', md: 'flex' } }}
             height={60} width={60}
           >
-            <Image src={logo} />
+             <Link href="/">
+              <Image src={logo} />
+            </Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none', flexDirection: "row-reverse" } }}>

@@ -8,7 +8,8 @@ import contact from '../assets/contact.jpeg'
 const ContactPage = () => {
   return (
     <div
-      style={{
+    className="contact-main"
+        style={{
         height: "82vh",
         display: "flex",
         justifyContent: "center",
@@ -81,6 +82,9 @@ const ContactPage = () => {
                   height: "3rem",
                   borderRadius: "10%",
                 }}
+                onClick={
+                  ()=>alert("Thank You for Contacting !!")
+                }
               >
                 Send
               </Button>

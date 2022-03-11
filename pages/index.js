@@ -12,7 +12,6 @@ export default function index() {
       </Head>
       <div>
         <Home />
-        {/* <About/> */}
       </div>
     </div>
   )

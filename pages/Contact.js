@@ -6,7 +6,7 @@ import React from 'react'
 function Contact() {
   return (
     <div>
-        <Navbar/>
+      <Navbar/>
       <ContactPage/>
       <Footer/>
     </div>
