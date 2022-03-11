@@ -17,7 +17,7 @@ function Footer() {
             display="flex"
             flexDirection="column"
           >
-            <div>
+            <div style={{cursor:"pointer"}}>
               <Link
                 href="https://github.com/ajStyles119"
                 target="_blank"
