@@ -70,13 +70,14 @@ html {
 }
 .hire-me-btn,
 .resume-btn {
-  background-color: #09104d8e;
-  color: antiquewhite;
+  
+  background-color: antiquewhite;
+  color: #09104d8e;
 }
 .hire-me-btn:hover,
 .resume-btn:hover {
-  background-color: antiquewhite;
-  color: #09104d8e;
+  background-color: #09104d8e;
+  color: antiquewhite;
 }
 @media screen and (max-width: 700px) {
   .content {
