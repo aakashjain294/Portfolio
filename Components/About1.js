@@ -63,7 +63,7 @@ function About() {
                 marginTop: "1rem",
               }}
             >
-              <Button className="hire-me-btn resume-btn">Resume</Button>
+              <Button className="hire-me-btn">Resume</Button>
             </div>
           </div>
           <div className="project">
