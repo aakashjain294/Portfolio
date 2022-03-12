@@ -9,7 +9,7 @@ import MUI from "../assets/MUI.png";
 import leetcode from "../assets/leetcode.png";
 import gfg from "../assets/gfg.png";
 import insta from "../assets/Insta1.PNG";
-import news from "../assets/Newsapp.png";
+// import news from "../assets/Newsapp.png";
 import camera from "../assets/camera.PNG";
 import movies from "../assets/Movies.PNG";
 import jira from "../assets/jira.PNG";
